@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEBSITE CHECKER</title>
+<script>
+    
+
+    var urls=["https://www.mfin.gov.rs/","https://www.rgz.gov.rs/"];
+    setInterval(function() {
+        urls.forEach(url => {
+            fetch(url, { mode: 'no-cors'}).then(function(response) {
+              //  console.log(response);
+                console.log(response.url + "  Status code: " + response.status +  " " + response.statusText + " " + new Date().toLocaleString());            
+                if(response.status != 200){
+                    console.error("CHECK URL: " + response.url + " " + response.status +  " " + new Date().toLocaleString())
+    
+                    alert("CHECK URL: " + response.url + " " + response.status + " " + new Date().toLocaleString())
+                }
+    
+            });
+          
+        });
+        // your code goes here...
+    }, 1800 * 1000); // 60 * 1000 milsec
+ 
+</script>
+
+</head>
+
+<body>
+<div id="main"></div>
+</body>
+ 
+</html>
