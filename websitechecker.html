@@ -8,9 +8,8 @@
     var urls=["https://www.mfin.gov.rs/","https://www.rgz.gov.rs/","https://www.kultura.gov.rs/","https://mtt.gov.rs/","https://cuvamte.gov.rs/","https://eturista.gov.rs/","https://www.ite.gov.rs/","https://www.napa.gov.rs/","https://edu.nsa.gov.rs/","https://inspiracija.srbijastvara.rs/","https://www.suk.gov.rs/","https://www.zdravlje.gov.rs/","https://nsa.gov.rs/","https://mpravde.gov.rs/","https://gs.gov.rs/","https://www.ai.gov.rs/","https://www.efaktura.gov.rs/","https://www.ivi.ac.rs/","https://direkcija.mpravde.gov.rs/","https://www.srbija.gov.rs/","https://www.rik.parlament.gov.rs/","https://cukarica.rs/","https://nasheroj.gov.rs/","https://treci.os.sud.rs/","https://pa.sud.rs/","https://si.os.sud.rs/","https://su.os.sud.rs/","https://st.os.sud.rs/","https://sm.os.sud.rs/","https://zr.vi.sud.rs/","https://pi.vi.sud.rs/","https://su.vi.sud.rs/","https://ca.vi.sud.rs/","https://sa.vi.sud.rs/","https://drugi.os.sud.rs/","https://bc.os.sud.rs/","https://br.os.sud.rs/","https://vp.os.sud.rs/","https://ki.os.sud.rs/","https://kz.os.sud.rs/","https://kg.os.sud.rs/","https://ns.os.sud.rs/","https://pb.os.sud.rs/","https://se.os.sud.rs/","https://zr.pr.sud.rs/","https://va.vi.sud.rs/","https://zr.vi.sud.rs/","https://ki.pk.sud.rs/","https://prvi.os.sud.rs/","https://pk.os.sud.rs/","https://pp.os.sud.rs/","https://pz.os.sud.rs/","https://pn.os.sud.rs/","https://lo.os.sud.rs/","https://dg.os.sud.rs/","https://sm.vi.sud.rs/","https://ue.vi.sud.rs/","https://ar.os.sud.rs/","https://va.os.sud.rs/","https://vr.os.sud.rs/","https://vb.os.sud.rs/","https://so.vi.sud.rs/","https://po.vi.sud.rs/","https://np.vi.sud.rs/","https://ja.vi.sud.rs/","https://bg.vi.sud.rs/"];
     setInterval(function() {
         urls.forEach(url => {
-             console.log(url);
             fetch(url, { mode: 'no-cors'}).then(function(response) {
-                console.log(response);
+//                 console.log(response);
 
                                
 console.log(response.url + "  Status code: " + response.status +  " " + response.statusText + " " + new Date().toLocaleString());            
