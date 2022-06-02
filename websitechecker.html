@@ -28,7 +28,9 @@
                       //  alert("CHECK URL: " + response.url + " " + response.status + " " + new Date().toLocaleString())
                     }
         
-                });
+                }).catch(function (error) {
+  console.error('Something went wrong with retrieving the info!' + url + " " + error);
+});
               
             });
          
