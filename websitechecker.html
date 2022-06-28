@@ -11,7 +11,7 @@
             urls.forEach(url => {
                 fetch(url, { mode: 'no-cors'}).then(function(response) {    
                                    
-             console.log(response.url + "  Status code: " + response.status +  " " + response.statusText + " " + new Date().toLocaleString());            
+           //  console.log(response.url + "  Status code: " + response.status +  " " + response.statusText + " " + new Date().toLocaleString());            
                     if(response.status != 200){
                         console.error("CHECK URL: " + response.url + " " + response.status +  " " + new Date().toLocaleString())
                         playMe = new Audio("alert-signal.mp3");
